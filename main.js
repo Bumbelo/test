@@ -1,4 +1,4 @@
-/*global $ */
+/*global $*/
 $('#wrapper').hide();
 function main() {
     $('#wrapper').fadeIn(500);
