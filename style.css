@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Roboto, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ddb;
+}
+
+#wrapper{
+    max-width:1000px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+header img{
+    width:100%; 
+    display:block;
+}
+
+nav{
+    overflow:hidden;
+}
+
+nav a{
+    display:block;
+    width:25%;
+    float:left;
+    color:white;
+    text-align:center;
+    text-decoration:none;
+    background-color:darkcyan;
+    padding:15px 30px;
+    font-size:20px;
+    -webkit-transition:all 1s ease;
+    transition: all 0.5s ease;
+}
+
+nav a:hover{
+    background-color: crimson;
+    cursor:pointer;
+}
+
+.active{
+    background-color: crimson;
+}
+
+article{
+    margin-top:30px;
+    margin-bottom:20px;
+    padding: 0 20px;
+}
+
+article h1{
+    font-size:30px;
+    margin: 0 10% 20px 10%;
+    text-align:center;
+    padding-bottom:15px;
+    border-bottom:2px solid crimson;
+}
+
+img.left{
+    float:left;
+    margin: 0px 10px 10px 0px;
+    width: 25%;
+    border-radius: 50% 30% 50% 30%;
+}
+
+article p{
+    text-align:justify;
+    line-height:25px;
+    font-size:18px;
+    padding: 15px 0;
+}
+
+iframe{
+    width:100%;
+}
+
+footer{
+    height: 40px;
+    background-color:darkcyan;
+    text-align:center;
+    color:white;
+    line-height:40px;
+    margin-top:10px;
+}
+
+.zakupy{
+    padding:20px;
+    text-align:center;
+    font-size:40px;
+}
+
+.shopping{
+    padding-bottom:30px;
+    border-bottom: 3px solid darkgreen;
+}
+
+.shopping-button{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 15px 30px;
+    width: 25%;
+    min-width:200px;
+    text-align:center;
+    background-color:palegreen;
+    color:black;
+    font-size:24px;
+    border: 3px solid forestgreen;
+}
+
+.shopping-button:hover{
+    cursor:pointer;
+}
+
+.shopping-list{
+    font-size:20px;
+    width:25%;
+    min-width:200px;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 15px 0px;
+    text-align:center;
+    list-style-type: none;
+    background-color:forestgreen;
+    color:whitesmoke;
+}
+
+.activebutton{
+    background-color:darkgreen;
+    color:whitesmoke;
+}
+
+
+@media (max-width:800px){
+    nav a{
+        width:50%;
+        font-size:22px;
+    }
+    article h1{
+        font-size:26px;
+    }
+    .shopping-button, .shopping-list{
+        font-size:26px;
+    }
+}
+
+@media (max-width:500px){
+    nav a{
+        width:100%;
+        font-size:24px;
+    }
+    article h1{
+        font-size:22px;
+    }
+    .shopping-button, .shopping-list{
+        font-size:24px;
+        width:60%;
+    }
+}
